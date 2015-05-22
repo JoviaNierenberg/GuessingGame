@@ -1,0 +1,14 @@
+/*Layout
+=============================*/
+body {
+	padding-top: 70px;
+}
+.container {
+	max-width: 940px;
+}
+
+/*Jumbotron
+=============================*/
+.jumbotron {
+	text-align: center;
+}

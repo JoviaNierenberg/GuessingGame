@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Guessing Game</title>
+    <!--
+LINKS TO CSS STYLE SHEETS. MUST ALL BE IN CSS FOLDER.
+-->		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-themes.min.css" media="screen">
+		<link rel="stylesheet" href="css/guessing-game-styles.css" media="screen">
+	</head>
+
+	<body>
+		<!--Nav Bar-->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand text-muted" href="#">Guessing Game</a>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html" > Game </a></li>
+						<li><a href="about.html"> About </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			
+			<div class="jumbotron">
+				<h1>Guess The Number</h1>
+				<p class= "lead"> Any integer between 1 and 100, inclusive.</p>
+				<div class="form-group">
+					  <label for="comment"></label>
+					  <textarea class="form-control" rows="2" id="comment"></textarea>
+				</div>
+				<p>
+					<a class="btn btn-primary btn-lg" href="#">Submit your guess</a>
+				</p>
+				<p>
+					<a class="btn btn-success" href="#">Play again</a>
+					<a class="btn btn-danger" href="#">Give me a hint</a>
+				</p>
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+
+</html>
