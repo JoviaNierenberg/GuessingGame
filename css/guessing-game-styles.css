@@ -12,3 +12,13 @@ body {
 .jumbotron {
 	text-align: center;
 }
+
+/*Text box
+=============================*/
+.input {
+	width: 215px;
+	/*height: 75px;*/
+	margin: 10px auto;
+	display: block;
+	text-align: center;
+}

@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Guessing Game</title>
-    <!--
-LINKS TO CSS STYLE SHEETS. MUST ALL BE IN CSS FOLDER.
--->		
+    	<!--
+		LINKS TO CSS STYLE SHEETS. ALL IN CSS FOLDER.
+		-->		
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-themes.min.css" media="screen">
@@ -31,26 +31,44 @@ LINKS TO CSS STYLE SHEETS. MUST ALL BE IN CSS FOLDER.
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			
+		<div class="container">			
 			<div class="jumbotron">
 				<h1>Guess The Number</h1>
 				<p class= "lead"> Any integer between 1 and 100, inclusive.</p>
-				<div class="form-group">
-					  <label for="comment"></label>
-					  <textarea class="form-control" rows="2" id="comment"></textarea>
-				</div>
-				<p>
-					<a class="btn btn-primary btn-lg" href="#">Submit your guess</a>
+				<form action="#" method="post">
+					<p>
+						<!--The user should have an input field where they can submit a guess. Final version HTML-based interface for input and feedback.-->
+						<input id="userGuess" name="userGuess" type="text" placeholder='Integer between 1 and 100' class="form-control input">
+					</p>
+					<p class="note">
+						<span>Your guess is:</span>
+					</p>
+					<p class="response">
+						<span>Response message</span>
+					</p>
+					<p>
+						<input type="button" value="Submit your guess" class="btn btn-primary btn-lg" id="submitButton">
+					</p>
+					<p>
+						<input type="button" value="Play again" class="btn btn-success" id="playAgainButton">
+						<input type="button" value="Give me a hint" class="btn btn-danger" id="hintButton">
+					</p>
+					<p class="hint">
+						<span>Hint: </span>
+					</p>
+					<p class = "guessesRemaining">
+						<span>5 guesses remaining</span>	
 				</p>
-				<p>
-					<a class="btn btn-success" href="#">Play again</a>
-					<a class="btn btn-danger" href="#">Give me a hint</a>
-				</p>
+				</form>
+							
 			</div>
 		</div>
+						<!--
+		LINKS TO JAVASCRIPT/JQUERY FILES. ALL IN JS FOLDER. AT THE BOTTOM OF THE PAGE SO THAT THEY WILL EXECUTE WHEN THE DOM HAS ALREADY LOADED.
+		-->	
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
 </html>
