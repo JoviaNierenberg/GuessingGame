@@ -60,37 +60,40 @@
 				$("#submitButton").hide();
 				$("#hintButton").hide();
 			}
-			//After the user submits a guess, indicate whether their guess is 'hot' or 'cold'. Let the user know if they need to guess higher or lower.
-			else if (Math.abs($diff) < 5) {
-				$(".response span").text("You're really hot!");
-			}
-			else if (Math.abs($diff) < 10) {
-				$(".response span").text("You're hot!");
-			}
-			else if (Math.abs($diff) < 20) {
-				$(".response span").text("You're warm.");
-			}
-			else if (Math.abs($diff) < 30) {
-				$(".response span").text("You're cold.");
-			}
 			else {
-				$(".response span").text("You're ice cold.");
-			}
-			if (Math.abs($diff) < Math.abs($prevDiff)){
-				$(".response span").append(" You're warmer than last time!");
-			}
-			else if (Math.abs($diff) > Math.abs($prevDiff)){
-				$(".response span").append(" You're cooler than last time.");
-			}
-			if ($diff < 0){
-				$(".response span").append(" Guess higher.");
-			}
-			else if ($diff > 0){
-				$(".response span").append(" Guess lower.");
+				//After the user submits a guess, indicate whether their guess is 'hot' or 'cold'. Let the user know if they need to guess higher or lower.
+				if (Math.abs($diff) < 5) {
+					$(".response span").text("You're really hot!");
+				}
+				else if (Math.abs($diff) < 10) {
+					$(".response span").text("You're hot!");
+				}
+				else if (Math.abs($diff) < 20) {
+					$(".response span").text("You're warm.");
+				}
+				else if (Math.abs($diff) < 30) {
+					$(".response span").text("You're cold.");
+				}
+				else {
+					$(".response span").text("You're ice cold.");
+				}
+				if (Math.abs($diff) < Math.abs($prevDiff)){
+					$(".response span").append(" You're warmer than last time!");
+				}
+				else if (Math.abs($diff) > Math.abs($prevDiff)){
+					$(".response span").append(" You're cooler than last time.");
+				}
+				if ($diff < 0){
+					$(".response span").append(" Guess higher.");
+				}
+				else if ($diff > 0){
+					$(".response span").append(" Guess lower.");
+				}	
 			}
 			if ($numGuesses > 1){
-				$(".response span").show();
-			}
+					$(".response span").show();
+				}
+			
 			
 		}	
 	});
